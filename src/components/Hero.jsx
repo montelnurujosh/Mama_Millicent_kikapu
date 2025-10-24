@@ -16,7 +16,7 @@ const Hero = () => {
       id="home"
       className="relative h-screen flex items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage: "url('/images/image2.png')",
+        backgroundImage: "url('/image2.png')",
         backgroundPosition: "center center", // move focus higher or lower
         backgroundSize: "100", // 🔥 Replace with your image path
       }}
