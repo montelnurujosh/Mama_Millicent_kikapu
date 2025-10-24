@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import bgMama from "../assets/images/image2.png";
+
 
 
 const Hero = () => {
@@ -16,7 +16,7 @@ const Hero = () => {
       id="home"
       className="relative h-screen flex items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage: "url('src/assets/images/image2.png')",
+        backgroundImage: "url('/images/image2.png')",
         backgroundPosition: "center center", // move focus higher or lower
         backgroundSize: "100", // 🔥 Replace with your image path
       }}
