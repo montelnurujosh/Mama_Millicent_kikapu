@@ -107,7 +107,7 @@ const Gallery = () => {
 
                 {/* WhatsApp button */}
                 <a
-                  href={`https://wa.me/2547XXXXXXXX?text=Hello!%20I'm%20interested%20in%20the%20${encodeURIComponent(
+                  href={`https://wa.me/254746980950?text=Hello!%20I'm%20interested%20in%20the%20${encodeURIComponent(
                     selectedImage.name
                   )}.%20Is%20it%20still%20available?`}
                   target="_blank"
