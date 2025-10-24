@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import bgMama from "../assets/images/image2.png";
+
 
 const Hero = () => {
   const scrollToGallery = () => {
