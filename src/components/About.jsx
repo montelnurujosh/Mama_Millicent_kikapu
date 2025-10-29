@@ -19,7 +19,7 @@ const About = () => {
               About Mama Millicent
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Mama Millicent is a passionate artisan from Kenya, dedicated to
+              Mama Millicent is a passionate artisan from Kisumu-Kenya, dedicated to
               preserving the ancient art of kikapu weaving. With over seven
               years of experience, she creates beautiful, functional baskets
               that carry the rich cultural heritage of her community.

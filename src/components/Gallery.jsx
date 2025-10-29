@@ -6,8 +6,8 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const images = [
-    { id: 1, src: '/images/kikapu1.jpg', name: 'Traditional Round Kikapu', material: 'Natural Fibers' },
-    { id: 2, src: '/images/kikapu2.jpg', name: 'Decorative Basket', material: 'Woven Grass' },
+    { id: 1, src: '/images/Kikapu1.jpeg', name: 'Traditional Round Kikapu', material: 'Natural Fibers' },
+    { id: 2, src: '/images/kikapu2.jpeg', name: 'Decorative Basket', material: 'Woven Grass' },
     { id: 3, src: '/images/kikapu3.jpg', name: 'Large Storage Kikapu', material: 'Palm Leaves' },
     { id: 4, src: '/images/kikapu4.jpg', name: 'Miniature Kikapu', material: 'Colored Fibers' },
     { id: 5, src: '/images/kikapu5.jpg', name: 'Wedding Basket', material: 'Special Weave' },
