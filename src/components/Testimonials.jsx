@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    name: "Sharon from Kisumu",
+    name: "Sharon from Siaya",
     text: "Mama Millicent’s kikapus are so beautiful and strong! I use mine every market day and it still looks brand new.",
     image: "/testimonials/sharon.jpg",
   },
@@ -23,12 +23,12 @@ const testimonials = [
     image: "/testimonials/kevin.jpg",
   },
   {
-    name: "Naomi from Eldoret",
+    name: "Margret from Kisumu",
     text: "I absolutely love the colors and the traditional design. It reminds me of home every time I carry it.",
     image: "src/assets/images/mama-millicent.jpeg",
   },
   {
-    name: "Beatrice from Kakamega",
+    name: "Mathar from Nairobi",
     text: "The kikapu is strong, stylish, and eco-friendly. I recommend Mama Millicent’s baskets to everyone!",
     image: "/testimonials/beatrice.jpg",
   },

@@ -6,15 +6,15 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const images = [
-    { id: 1, src: '/images/Kikapu1.jpeg', name: 'Traditional Round Kikapu', material: 'Natural Fibers' },
-    { id: 2, src: '/images/kikapu2.jpeg', name: 'Decorative Basket', material: 'Woven Grass' },
-    { id: 3, src: '/images/kikapu3.jpg', name: 'Large Storage Kikapu', material: 'Palm Leaves' },
-    { id: 4, src: '/images/kikapu4.jpg', name: 'Miniature Kikapu', material: 'Colored Fibers' },
-    { id: 5, src: '/images/kikapu5.jpg', name: 'Wedding Basket', material: 'Special Weave' },
-    { id: 6, src: '/images/kikapu6.jpg', name: 'Market Kikapu', material: 'Durable Materials' },
-    { id: 7, src: '/images/kikapu7.jpg', name: 'Artisan Special', material: 'Mixed Fibers' },
-    { id: 8, src: '/images/kikapu8.jpg', name: 'Heritage Collection', material: 'Traditional Weave' },
-    { id: 9, src: '/images/kikapu9.jpg', name: 'Modern Design', material: 'Contemporary Style' },
+    { id: 1, src: '/images/Kikapu1.jpeg' },
+    { id: 2, src: '/images/kikapu2.jpeg' },
+    { id: 3, src: '/images/kikapu3.jpeg' },
+    { id: 4, src: '/images/kikapu4.jpeg' },
+    { id: 5, src: '/images/kikapu5.jpeg' },
+    { id: 6, src: '/images/kikapu6.jpeg' },
+    { id: 7, src: '/images/kikapu7.jpeg' },
+    { id: 8, src: '/images/kikapu8.jpeg' },
+    { id: 9, src: '/images/kikapu9.jpeg' },
   ];
 
   const openModal = (image) => setSelectedImage(image);
@@ -23,6 +23,7 @@ const Gallery = () => {
   return (
     <section id="gallery" className="py-20 bg-[#F9F5F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -34,7 +35,7 @@ const Gallery = () => {
             Our Kikapu Collection
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Each kikapu is handcrafted with care and tradition. Explore our basket collection to find one that speaks to you.
+            Handwoven with care and tradition — each kikapu is unique, made from the same natural materials with love and skill.
           </p>
         </motion.div>
 
@@ -52,15 +53,21 @@ const Gallery = () => {
             >
               <img
                 src={image.src}
-                alt={image.name}
-                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+                alt="Handwoven Kikapu"
+                className="w-full h-80 object-cover object-center group-hover:scale-105 transition-transform duration-500 rounded-2xl"
               />
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <h3 className="font-semibold text-lg mb-1">{image.name}</h3>
-                  <p className="text-sm">{image.material}</p>
-                </div>
-              </div>
+
+              {/* Hover Message */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileHover={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="absolute inset-0 bg-warm-brown/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center"
+              >
+                <p className="text-white font-semibold text-lg text-center px-4">
+                  Hey, you want this? <br /> Tap to order 👋🏽
+                </p>
+              </motion.div>
             </motion.div>
           ))}
         </div>
@@ -92,24 +99,20 @@ const Gallery = () => {
 
               <img
                 src={selectedImage.src}
-                alt={selectedImage.name}
-                className="w-full h-96 object-cover"
+                alt="Selected Kikapu"
+                className="w-full h-96 object-cover object-center"
               />
 
               <div className="p-6 text-center">
-                <h3 className="text-2xl font-playfair font-bold text-warm-brown mb-2">
-                  {selectedImage.name}
+                <h3 className="text-2xl font-playfair font-bold text-warm-brown mb-3">
+                  Beautifully Handcrafted Kikapu
                 </h3>
-                <p className="text-gray-700 mb-3">Material: {selectedImage.material}</p>
                 <p className="text-gray-600 mb-6">
-                  Each kikapu is a piece of heritage — woven with tradition, patience, and passion.
+                  Each kikapu is a timeless piece of Kenyan artistry — woven with patience, culture, and passion.
                 </p>
 
-                {/* WhatsApp button */}
                 <a
-                  href={`https://wa.me/254746980950?text=Hello!%20I'm%20interested%20in%20the%20${encodeURIComponent(
-                    selectedImage.name
-                  )}.%20Is%20it%20still%20available?`}
+                  href={`https://wa.me/254746980950?text=Hello!%20I'm%20interested%20in%20this%20beautiful%20kikapu.%20Is%20it%20still%20available?`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full transition-all duration-300"
