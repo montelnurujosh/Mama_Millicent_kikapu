@@ -23,9 +23,9 @@ const testimonials = [
     image: "/testimonials/kevin.jpg",
   },
   {
-    name: "Margret from Kisumu",
+    name: "Maggie from Kisumu",
     text: "I absolutely love the colors and the traditional design. It reminds me of home every time I carry it.",
-    image: "src/assets/images/mama-millicent.jpeg",
+    image: "/testimonials/Maggie.jpeg",
   },
   {
     name: "Mathar from Nairobi",
