@@ -10,12 +10,15 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-[80vh] sm:min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-[80vh] sm:min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Hero Image */}
       <img
-        src="/image2.png"
-        alt="Hero"
-        className="absolute inset-0 w-full h-full object-contain sm:object-cover"
+        src="/Home.jpeg"
+        alt="Mama Millicent weaving traditional Kikapus"
+        className="absolute inset-0 w-full h-full object-cover sm:object-center md:object-cover lg:object-cover transition-all duration-700"
       />
 
       {/* Dark overlay */}
@@ -27,7 +30,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold text-white mb-6"
+          className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold text-white mb-6 drop-shadow-md"
         >
           Handwoven Kikapus — Crafted with Love by Mama Millicent
         </motion.h1>
